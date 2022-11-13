@@ -14,20 +14,28 @@
     const contarCaracteres = function (str) {
         return str.length;
     }
-    console.log(contarCaracteres('Hola Mundo'));
+    console.log('Output ejercicio 1: ', contarCaracteres('Hola Mundo'));
 
     /* 2) Programa una función que te devuelva el texto recortado según el número de caracteres indicados, pe. miFunción("Hola Mundo", 4) devolverá "Hola" */
 
-
+    const extraeCarateresStr = function (str) {
+      let strResultado = str.substring(0, 4);
+      return strResultado
+    }
+    console.log('Output ejercicio 2: ', extraeCarateresStr('Hola Mundo'));
 
     /* 3) Programa una función que dada una String te devuelva un Array de textos separados por cierto caracter, pe.
      miFuncion('hola que tal', ' ') devolverá ['hola', 'que', 'tal'] */
 
-
+    const deStrAArray = function (str, sep) {
+      const arrayResultado = str.split(sep);
+      return arrayResultado;
+    }
+    console.log('Output ejercicio 3: ', deStrAArray('hola que tal', ' '));
 
     /* 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo */
 
-
+    
 
     /* 5) Programa una función que invierta las palabras de una cadena de texto, pe. miFuncion("Hola Mundo") devolverá "odnuM aloH" */
 
